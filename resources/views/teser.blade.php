@@ -264,7 +264,7 @@
     <footer class="footer-teser" style="background: url({{asset('/public/images/FOOTER_IMG.png')}}); background-repeat: no-repeat; background-size:cover; background-position: center;">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-3 offset-1">
+                <div class="col-sm-3 offset-1 my-auto">
                     <img src="{{asset('/public/images/Facebook.png')}}" style="width: 53px">
                     <img src="{{asset('/public/images/Instagram.png')}}" style="width: 53px; margin-left: 53px">
                     <img src="{{asset('/public/images/Twitter.png')}}" style="width: 53px; margin-left: 53px">
