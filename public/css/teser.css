@@ -18,6 +18,11 @@
     src: url("/TESER-Website/public/fonts/Forque.ttf");
 }
 
+@font-face {
+    font-family: Axettac;
+    src: url("/TESER-Website/public/fonts/Axettac_Demo.ttf");
+}
+
 body{
     overflow-x: hidden;
 }
@@ -164,4 +169,22 @@ label {
     font-weight : 400 ;
     font-family: Forque;
     padding: 15px 25px;
+}
+
+@keyframes Bounce {
+    0% {bottom : 0px;}
+    15%{bottom : 10px;}
+    40% {bottom : 0px;}
+    55% {bottom : 5px;}
+    70% {bottom : 0px;}
+    100% {bottom : 0px;}
+}
+
+.Bounce {
+    position: relative;
+    animation-name: Bounce;
+    animation-duration: 2s;
+    /*animation-delay: 10s;*/
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }

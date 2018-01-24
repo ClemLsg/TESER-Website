@@ -18,7 +18,11 @@
     <title>Teser</title>
     <link href="{{ asset('/public/css/bootstrap.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('/public/css/teser.css') }}" rel="stylesheet" type="text/css">
-    <script type="text/javascript" href="{{ asset('/public/js/bootstrap.js') }}" ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ asset('/public/js/bootstrap.js') }}" ></script>
+    <script type="text/javascript" src="{{ asset('/public/js/teser.js') }}" ></script>
 </head>
 
 <body>
@@ -32,16 +36,16 @@
                     <img src="{{asset('/public/images/LOGO_officiel.png')}}" class="img-fluid">
                 </div>
                 <div class="col-sm-2 text-center">
-                    <button type="button" class="btn btn-teser">Information</button>
+                    <button type="button" class="btn btn-teser" id="info-btn">Information</button>
                 </div>
                 <div class="col-sm-2 text-center">
-                    <button type="button" class="btn btn-teser">Inscription</button>
+                    <button type="button" class="btn btn-teser" id="reg-btn">Inscription</button>
                 </div>
             </div>
             <div class="row align-items-end thirdheight">
                 <div class="col-sm-11 offset-1">
                     <h2 style="font-family: Forque; color: white; font-size: 150px; font-weight: 400">TOURNOI <span style="color: #eb005d">eSPORT</span></h2>
-                    <h2 style="font-family: Pacifico; color: white; font-size: 100px;">des Etudiants Rouennais</h2>
+                    <h2 style="font-family: Axettac; color: white; font-size: 100px;">des Etudiants Rouennais</h2>
                 </div>
             </div>
             <div class="row align-items-end thirdheight" style="">
@@ -49,12 +53,12 @@
                     <h3 style="font-family: Forque; color: white; font-size: 40px; font-weight : 400 ;">LEAGUE OF LEGENDS & COUNTER STRIKE</h3>
                 </div>
                 <div class="col-sm-2 offset-5 text-center">
-                    <img src="{{asset('/public/images/ARROW.png')}}" class="img-fluid" style="filter: invert(100%); width: 60px">
+                    <img src="{{asset('/public/images/ARROW.png')}}" class="img-fluid Bounce" id="button-scroll" target="register-zone" style="filter: invert(100%); width: 60px">
                 </div>
             </div>
         </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4 offset-4 titles text-center">
@@ -66,7 +70,7 @@
                     <div class="col-sm-5">
                         <div style="border-bottom: 1px solid black">
                             <h4>&nbsp;</h4>
-                            <h4>Le TESER est un tournoi eSport qui se concentre sur deux heux uniquement :</h4>
+                            <h4>Le TESER est un tournoi eSport qui se concentre sur deux jeux uniquement :</h4>
                             <h3 style="color: #eb005d">league Of Legends et Counter Strike</h3>
                             <h4>&nbsp;</h4>
                             <h4>Cet évènement est totalement gratuit et réservé exclusivement à tous les étudiants de l'université de rouen normandie.
@@ -82,7 +86,7 @@
                             <div class="col-sm-4 offset-4">
                                 <br>
                                 <br>
-                                <button type="button" class="btn btn-teser-2">s'inscrire</button>
+                                <button type="button" class="btn btn-teser-2">VOIR</button>
                             </div>
                         </div>
                     </div>
@@ -117,11 +121,11 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-4 offset-1 titles text-center">
-                <h4>INFORMATION AU TOURNOI</h4>
+                <h4>INSCRIPTION AU TOURNOI</h4>
             </div>
         </div>
     </div>
-    <div class="register-zone">
+    <div class="register-zone" id="register-zone">
         <div class="container-fluid" style="padding-top: 100px; padding-left: 50px; padding-right: 75px">
             <form method="POST" action="{{ route('register') }}">
                 {{ csrf_field() }}
@@ -129,14 +133,14 @@
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="name">ENTREZ LE NOM DE VOTRE EQUIPE</label>
-                            <input type="email" class="form-control form-control-teser" id="name" name="name" required>
+                            <input type="text" class="form-control form-control-teser" id="name" name="name" required>
                         </div>
                         <br>
                         <div class="form-group">
                             <label for="game">VEUILLEZ CHOISIR LE JEU</label>
                             <select class="form-control form-control-teser" id="game" name="game" style="height: 52px;" required>
-                                <option>League Of legend</option>
-                                <option>Counter Strike Global Offesnive</option>
+                                <option value="Lol">League Of legend</option>
+                                <option value="Cs">Counter Strike Global Offesnive</option>
                             </select>
                         </div>
                         <br>
@@ -153,29 +157,29 @@
                         <div class="row">
                             <div class="col-sm-3">
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-teser" placeholder="Joueur 1" name="player1" required>
+                                    <input type="text" class="form-control form-control-teser" placeholder="Joueur 1" name="player1" required>
                                 </div>
                             </div>
                             <div class="col-sm-3">
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-teser" placeholder="Joueur 2" name="player2" required>
+                                    <input type="text" class="form-control form-control-teser" placeholder="Joueur 2" name="player2" required>
                                 </div>
                             </div>
                             <div class="col-sm-3">
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-teser" placeholder="Joueur 3" name="player3" required>
+                                    <input type="text" class="form-control form-control-teser" placeholder="Joueur 3" name="player3" required>
                                 </div>
                             </div>
                             <div class="col-sm-3">
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-teser" placeholder="Joueur 4" name="player4" required>
+                                    <input type="text" class="form-control form-control-teser" placeholder="Joueur 4" name="player4" required>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-3">
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-teser" placeholder="Joueur 5" name="player5" required>
+                                    <input type="text" class="form-control form-control-teser" placeholder="Joueur 5" name="player5" required>
                                 </div>
                             </div>
                             <div class="col-sm-8" style="border-top: 1px solid white; margin-top: 26px; margin-bottom: -26px"></div>
@@ -192,7 +196,7 @@
                                 <br>
                                 <div class="form-group">
                                     <label for="passwordcheck">REECRIVEZ VOTRE MOT DE PASSE</label>
-                                    <input type="password" class="form-control form-control-teser" id="passwordcheck" name="passwordcheck" required>
+                                    <input type="password" class="form-control form-control-teser" id="passwordcheck" name="password_confirmation" required>
                                 </div>
                             </div>
                         </div>
@@ -219,6 +223,7 @@
                         </div>
                     </div>
                 </div>
+                <br>
                 <div class="row align-items-center">
                     <div class="col-sm-2 offset-10">
                         <button type="submit" class="btn btn-teser-3">S'INSCRIRE</button>
