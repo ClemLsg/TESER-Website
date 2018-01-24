@@ -1,0 +1,167 @@
+@font-face {
+    font-family: Chau;
+    src: url("/Teser/public/fonts/ChauPhilomeneOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: Lato;
+    src: url("/Teser/public/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: Pacifico;
+    src: url("/Teser/public/fonts/Pacifico-Regular.ttf");
+}
+
+@font-face {
+    font-family: Forque;
+    src: url("/Teser/public/fonts/Forque.ttf");
+}
+
+body{
+    overflow-x: hidden;
+}
+
+p {
+    font-family: Lato;
+}
+
+h3, h4 {
+    font-family: Lato;
+    font-weight: 700;
+}
+
+.head-home {
+    height: 110vh;
+    width: 100vw;
+    background: no-repeat fixed center;
+}
+
+.btn-teser{
+    border-radius: 0;
+    background-color: #eb005d;
+    color: white;
+    font-family: Forque;
+    color: white;
+    font-size: 26px;
+    width : 192px ;
+    height : 74px ;
+}
+
+.btn-teser-2{
+    border-radius: 0;
+    width: 244px;
+    height: 71px;
+    background-color: #eb005d;
+    color: white;
+    font-family: Forque;
+    color: white;
+    font-size: 26px;
+    -webkit-box-shadow: 8px 8px 0px 2px rgba(140,0,55,1);
+    -moz-box-shadow: 8px 8px 0px 2px rgba(140,0,55,1);
+    box-shadow: 8px 8px 0px 2px rgba(140,0,55,1);
+}
+
+.btn-teser-3{
+    border-radius: 0;
+    width: 244px;
+    height: 71px;
+    background-color: #eb005d;
+    color: white;
+    font-family: Forque;
+    color: white;
+    font-size: 26px;
+    -webkit-box-shadow: 8px 8px 0px 2px white;
+    -moz-box-shadow: 8px 8px 0px 2px white;
+    box-shadow: 8px 8px 0px 2px white;
+}
+
+.thirdheight{
+    height: 33vh;
+}
+
+.about{
+    margin-top: -10vh;
+    width: 100vw;
+}
+
+.about-card{
+    border-radius: 61px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 62px 0px rgba(0, 0, 0, 0.52);
+    padding: 100px 75px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.titles{
+    background-color: #eb005d;
+    border-radius: 26px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-bottom: -37px;
+}
+
+.titles h4{
+    font-family: Forque;
+    font-size : 35px ;
+    font-weight : 400 ;
+}
+
+.register-zone {
+    width: 100vw;
+    background-color : #222222 ;
+}
+
+label {
+    color: white;
+    font-family: Lato;
+    font-size : 20px ;
+    font-weight : 800 ;
+}
+
+.form-control-teser {
+    border-radius : 26px ;
+    padding: 15px;
+}
+
+.register-text {
+    background-color: white;
+    border-radius : 26px ;
+    padding: 50px;
+    height: 100%;
+}
+
+.register-title {
+    background-color: #222222;
+    border-radius: 26px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-bottom: -37px;
+}
+
+.register-title h4{
+    font-family: Forque;
+    font-size : 35px ;
+    font-weight : 400 ;
+}
+
+.sponsor-zone {
+    background-color: #eb005d;
+}
+
+.footer-teser {
+    padding-top: 200px;
+}
+
+.btn-teser-4{
+    background-color: #eb005d;
+    border-radius : 26px ;
+    color: white;
+    font-size : 30px ;
+    font-weight : 400 ;
+    font-family: Forque;
+    padding: 15px 25px;
+}
