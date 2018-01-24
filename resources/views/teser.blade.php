@@ -123,17 +123,18 @@
     </div>
     <div class="register-zone">
         <div class="container-fluid" style="padding-top: 100px; padding-left: 50px; padding-right: 75px">
-            <form>
+            <form method="POST" action="{{ route('register') }}">
+                {{ csrf_field() }}
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="name">ENTREZ LE NOM DE VOTRE EQUIPE</label>
-                            <input type="email" class="form-control form-control-teser" id="name">=
+                            <input type="email" class="form-control form-control-teser" id="name" name="name" required>
                         </div>
                         <br>
                         <div class="form-group">
                             <label for="game">VEUILLEZ CHOISIR LE JEU</label>
-                            <select class="form-control form-control-teser" id="game" style="height: 52px;">
+                            <select class="form-control form-control-teser" id="game" name="game" style="height: 52px;" required>
                                 <option>League Of legend</option>
                                 <option>Counter Strike Global Offesnive</option>
                             </select>
@@ -142,7 +143,7 @@
                         <br>
                         <div class="form-group">
                             <label for="email">ENTREZ L'EMAIL DU CHEF D'EQUIPE</label>
-                            <input type="email" class="form-control form-control-teser" id="email">
+                            <input type="email" class="form-control form-control-teser" name="email" id="email" required>
                         </div>
                         <br>
                         <br>
@@ -152,29 +153,29 @@
                         <div class="row">
                             <div class="col-sm-3">
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-teser" placeholder="Joueur 1">=
+                                    <input type="email" class="form-control form-control-teser" placeholder="Joueur 1" name="player1" required>
                                 </div>
                             </div>
                             <div class="col-sm-3">
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-teser" placeholder="Joueur 2">=
+                                    <input type="email" class="form-control form-control-teser" placeholder="Joueur 2" name="player2" required>
                                 </div>
                             </div>
                             <div class="col-sm-3">
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-teser" placeholder="Joueur 3">=
+                                    <input type="email" class="form-control form-control-teser" placeholder="Joueur 3" name="player3" required>
                                 </div>
                             </div>
                             <div class="col-sm-3">
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-teser" placeholder="Joueur 4">=
+                                    <input type="email" class="form-control form-control-teser" placeholder="Joueur 4" name="player4" required>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-3">
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-teser" placeholder="Joueur 5">=
+                                    <input type="email" class="form-control form-control-teser" placeholder="Joueur 5" name="player5" required>
                                 </div>
                             </div>
                             <div class="col-sm-8" style="border-top: 1px solid white; margin-top: 26px; margin-bottom: -26px"></div>
@@ -185,13 +186,13 @@
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="password">ENTREZ VOTRE MOT DE PASSE</label>
-                                    <input type="password" class="form-control form-control-teser" id="password">
+                                    <input type="password" class="form-control form-control-teser" id="password" name="password" required>
                                 </div>
                                 <br>
                                 <br>
                                 <div class="form-group">
                                     <label for="passwordcheck">REECRIVEZ VOTRE MOT DE PASSE</label>
-                                    <input type="password" class="form-control form-control-teser" id="passwordcheck">
+                                    <input type="password" class="form-control form-control-teser" id="passwordcheck" name="passwordcheck" required>
                                 </div>
                             </div>
                         </div>
