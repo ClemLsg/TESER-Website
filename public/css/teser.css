@@ -1,26 +1,26 @@
 @font-face {
     font-family: Chau;
-    src: url("/TESER-Website/public/fonts/ChauPhilomeneOne-Regular.ttf");
+    src: url("/TeserGit/public/fonts/ChauPhilomeneOne-Regular.ttf");
 }
 
 @font-face {
     font-family: Lato;
-    src: url("/TESER-Website/public/fonts/Lato-Regular.ttf");
+    src: url("/TeserGit/public/fonts/Lato-Regular.ttf");
 }
 
 @font-face {
     font-family: Pacifico;
-    src: url("/TESER-Website/public/fonts/Pacifico-Regular.ttf");
+    src: url("/TeserGit/public/fonts/Pacifico-Regular.ttf");
 }
 
 @font-face {
     font-family: Forque;
-    src: url("/TESER-Website/public/fonts/Forque.ttf");
+    src: url("/TeserGit/public/fonts/Forque.ttf");
 }
 
 @font-face {
     font-family: Axettac;
-    src: url("/TESER-Website/public/fonts/Axettac_Demo.ttf");
+    src: url("/TeserGit/public/fonts/Axettac_Demo.ttf");
 }
 
 body{
@@ -187,4 +187,22 @@ label {
     /*animation-delay: 10s;*/
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.teser-link {
+    color: white;
+    text-decoration: white;
+    text-decoration-line: underline;
+}
+
+.teser-link:hover {
+    color: silver;
+    text-decoration: silver;
+    text-decoration-line: underline;
+}
+
+.login-card{
+    border-radius: 25px;
+    border: 2px solid white;
+    padding: 60px 40px;
 }

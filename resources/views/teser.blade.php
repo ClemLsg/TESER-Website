@@ -35,12 +35,22 @@
                 <div class="col-sm-2 text-center">
                     <img src="{{asset('/public/images/LOGO_officiel.png')}}" class="img-fluid">
                 </div>
-                <div class="col-sm-2 text-center">
-                    <button type="button" class="btn btn-teser" id="info-btn">Information</button>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-6 text-center">
+                            <button type="button" class="btn btn-teser" id="info-btn">Information</button>
+                        </div>
+                        <div class="col-sm-6 text-center">
+                            <button type="button" class="btn btn-teser" id="reg-btn">Inscription</button>
+                        </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-sm-6" style="color: white; text-align: center">
+                            <p>DEJA INSCRIT ? <a class="teser-link" href="{{route('login')}}">SE CONNECTER</a> </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-2 text-center">
-                    <button type="button" class="btn btn-teser" id="reg-btn">Inscription</button>
-                </div>
+
             </div>
             <div class="row align-items-end thirdheight">
                 <div class="col-sm-11 offset-1">
