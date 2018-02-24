@@ -40,6 +40,8 @@
                         <div class="col-sm-6 text-center">
                             <button type="button" class="btn btn-teser" id="info-btn">Information</button>
                         </div>
+                        @guest
+
                         <div class="col-sm-6 text-center">
                             <button type="button" class="btn btn-teser" id="reg-btn">Inscription</button>
                         </div>
@@ -50,6 +52,21 @@
                         </div>
                     </div>
                 </div>
+                @else
+                    <div class="col-sm-6 text-center">
+                        <button type="button" class="btn btn-teser"><a class="teser-link2" href="{{route('compte')}}">mon compte</a></button>
+                    </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-sm-6" style="color: white; text-align: center">
+                    <a class="teser-link" href="{{route('logout')}}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">SE DECONNECTER</a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        {{ csrf_field() }}
+                    </form>
+                </div>
+            </div>
+        </div>
+                @endguest
 
             </div>
             <div class="row align-items-end thirdheight">

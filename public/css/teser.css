@@ -1,26 +1,26 @@
 @font-face {
     font-family: Chau;
-    src: url("/TeserGit/public/fonts/ChauPhilomeneOne-Regular.ttf");
+    src: url("/Teser-Website/public/fonts/ChauPhilomeneOne-Regular.ttf");
 }
 
 @font-face {
     font-family: Lato;
-    src: url("/TeserGit/public/fonts/Lato-Regular.ttf");
+    src: url("/Teser-Website/public/fonts/Lato-Regular.ttf");
 }
 
 @font-face {
     font-family: Pacifico;
-    src: url("/TeserGit/public/fonts/Pacifico-Regular.ttf");
+    src: url("/Teser-Website/public/fonts/Pacifico-Regular.ttf");
 }
 
 @font-face {
     font-family: Forque;
-    src: url("/TeserGit/public/fonts/Forque.ttf");
+    src: url("/Teser-Website/public/fonts/Forque.ttf");
 }
 
 @font-face {
     font-family: Axettac;
-    src: url("/TeserGit/public/fonts/Axettac_Demo.ttf");
+    src: url("/Teser-Website/public/fonts/Axettac_Demo.ttf");
 }
 
 body{
@@ -62,7 +62,7 @@ h3, h4 {
     font-family: Forque;
     color: white;
     font-size: 26px;
-    -webkit-box-shadow: 8px 8px 0px 2px rgba(140,0,55,1);
+    -webkit-box-shadow: 8px 8px 0px 2px rgb(140, 0, 55);
     -moz-box-shadow: 8px 8px 0px 2px rgba(140,0,55,1);
     box-shadow: 8px 8px 0px 2px rgba(140,0,55,1);
 }
@@ -201,8 +201,37 @@ label {
     text-decoration-line: underline;
 }
 
+.teser-link2 {
+    color: white;
+}
+
+.teser-link2:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .login-card{
     border-radius: 25px;
     border: 2px solid white;
     padding: 60px 40px;
+}
+
+.left-compte{
+    background-color: #eb005d;
+}
+
+.text-display{
+    background-color: #d1005d;
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px;
+}
+
+.text-display2{
+    background-color: #d1005d;
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
