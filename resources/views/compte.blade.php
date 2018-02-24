@@ -98,10 +98,66 @@
                     <p style="font-family: Lato; color: white;">@2018 TESER.FR</p>
                 </div>
             </div>
-            <div class="col-sm-8">
-
+            <div class="col-sm-7">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="teser-card text-center">
+                            <h5>LISTE DE VOS DIFFERENTS MATCHS A JOUER</h5>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-2 offset-5">
+                                    <h5>VS</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-2 offset-5">
+                                    <h5>VS</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-2 offset-5">
+                                    <h5>VS</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-2 offset-5">
+                                    <h5>VS</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-2 offset-5">
+                                    <h5>VS</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-2 offset-5">
+                                    <h5>VS</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="teser-card text-center">
+                            <h5>ENVOI DU CERTIFICAT D'ETUDE</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-3">
 
             </div>
         </div>
