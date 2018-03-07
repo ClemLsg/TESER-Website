@@ -1,26 +1,37 @@
 @font-face {
     font-family: Chau;
-    src: url("/Teser-Website/public/fonts/ChauPhilomeneOne-Regular.ttf");
+    src: url("/TeserGit/public/fonts/ChauPhilomeneOne-Regular.ttf");
 }
 
 @font-face {
     font-family: Lato;
-    src: url("/Teser-Website/public/fonts/Lato-Regular.ttf");
+    src: url("/TeserGit/public/fonts/Lato-Regular.ttf");
 }
 
 @font-face {
+    font-family: Lato-Black;
+    src: url("/TeserGit/public/fonts/Lato-Black.ttf");
+}
+
+@font-face {
+    font-family: Lato-Black-Italic;
+    src: url("/TeserGit/public/fonts/Lato-BlackItalic.ttf");
+}
+
+
+@font-face {
     font-family: Pacifico;
-    src: url("/Teser-Website/public/fonts/Pacifico-Regular.ttf");
+    src: url("/TeserGit/public/fonts/Pacifico-Regular.ttf");
 }
 
 @font-face {
     font-family: Forque;
-    src: url("/Teser-Website/public/fonts/Forque.ttf");
+    src: url("/TeserGit/public/fonts/Forque.ttf");
 }
 
 @font-face {
     font-family: Axettac;
-    src: url("/Teser-Website/public/fonts/Axettac_Demo.ttf");
+    src: url("/TeserGit/public/fonts/Axettac_Demo.ttf");
 }
 
 body{
@@ -51,6 +62,7 @@ h3, h4 {
     font-size: 26px;
     width : 192px ;
     height : 74px ;
+    cursor: pointer;
 }
 
 .btn-teser-2{
@@ -65,6 +77,7 @@ h3, h4 {
     -webkit-box-shadow: 8px 8px 0px 2px rgb(140, 0, 55);
     -moz-box-shadow: 8px 8px 0px 2px rgba(140,0,55,1);
     box-shadow: 8px 8px 0px 2px rgba(140,0,55,1);
+    cursor: pointer;
 }
 
 .btn-teser-3{
@@ -79,6 +92,7 @@ h3, h4 {
     -webkit-box-shadow: 8px 8px 0px 2px white;
     -moz-box-shadow: 8px 8px 0px 2px white;
     box-shadow: 8px 8px 0px 2px white;
+    cursor: pointer;
 }
 
 .thirdheight{
@@ -91,12 +105,11 @@ h3, h4 {
 }
 
 .about-card{
-    border-radius: 61px;
     background-color: #ffffff;
-    box-shadow: 0px 0px 62px 0px rgba(0, 0, 0, 0.52);
     padding: 100px 75px;
-    margin-left: 50px;
-    margin-right: 50px;
+    left: 0;
+    position: absolute;
+    width: 100vw;
 }
 
 .titles{
@@ -106,11 +119,12 @@ h3, h4 {
     padding-top: 15px;
     padding-bottom: 10px;
     margin-bottom: -37px;
+    z-index: 1;
 }
 
 .titles h4{
     font-family: Forque;
-    font-size : 35px ;
+    font-size : 20pt ;
     font-weight : 400 ;
 }
 
@@ -169,6 +183,7 @@ label {
     font-weight : 400 ;
     font-family: Forque;
     padding: 15px 25px;
+    cursor: pointer;
 }
 
 @keyframes Bounce {
@@ -210,6 +225,17 @@ label {
     text-decoration: none;
 }
 
+.teser-link3 {
+    color: #eb005d;
+    text-decoration: #eb005d;
+    text-decoration-line: underline;
+}
+
+.teser-link3:hover {
+    color: #d1005d;
+    text-decoration: none;
+}
+
 .login-card{
     border-radius: 25px;
     border: 2px solid white;
@@ -239,8 +265,9 @@ label {
 .teser-card{
     background-color: white;
     border-radius: 10px;
-    padding: 15px;
-    margin: 15px;
+    -webkit-box-shadow: 0px 0px 100px -16px rgba(0,0,0,0.28);
+    -moz-box-shadow: 0px 0px 100px -16px rgba(0,0,0,0.28);
+    box-shadow: 0px 0px 100px -16px rgba(0,0,0,0.28);
 }
 
 .spacer{
@@ -248,5 +275,29 @@ label {
 }
 
 .spacer2{
-    height: 15vh;
+    height: 10vh;
+}
+
+.btn-teser-5{
+    background: none;
+    border-radius : 26px ;
+    border: 3px solid white;
+    color: white;
+    font-size : 20pt ;
+    font-weight : 400 ;
+    font-family: Forque;
+    padding: 5px 40px;
+    cursor: pointer;
+}
+
+.label-teser{
+    background: none;
+    border-radius : 26px ;
+    border: 3px solid #eb005d;
+    color: #eb005d;
+    font-size : 20pt ;
+    font-weight : 400 ;
+    font-family: Forque;
+    padding: 5px 40px;
+    cursor: pointer;
 }

@@ -15,6 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('/public/images/favicon.ico')}}">
     <title>Teser</title>
     <link href="{{ asset('/public/css/bootstrap.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('/public/css/teser.css') }}" rel="stylesheet" type="text/css">
@@ -347,13 +348,13 @@
             <div class="col-sm-2 text-center">
                 <img src="{{asset('/public/images/LOGO_officiel.png')}}" style="height: 129px; width: 129px;">
             </div>
-            <div class="col-2 offset-4 text-center align-self-center h-100">
+            <div class="col-sm-2 offset-4 text-center align-self-center h-100">
                 <p class="align-middle" style="font-family: Forque; color: white; font-size: 18pt;">INFORMATIONS</p>
             </div>
-            <div class="col-2 text-center align-self-center h-100">
+            <div class="col-sm-2 text-center align-self-center h-100">
                 <button type="button" class="btn btn-teser-4" id="reg-btn">INSCRIPTIONS</button>
             </div>
-            <div class="col-2 text-center align-self-center h-100">
+            <div class="col-sm-2 text-center align-self-center h-100">
                 <p class="align-middle" style="font-family: Forque; color: white; font-size: 18pt;">SE CONNECTER</p>
             </div>
         </div>
@@ -365,7 +366,7 @@
         <div class="spacer"></div>
         <div class="row">
             <div class="col-sm-5 text-right align-self-center" style="background-color: #eb005d;border-bottom-right-radius: 25px;border-top-right-radius: 25px;">
-                <p style="font-family: Lato; color: white; font-size: 16pt;margin-bottom: 8px;margin-top: 8px;">FIN DES INSCRIPTIONS <span style="font-weight: bold">LE 24 MARS 2018</span></p>
+                <p style="font-family: Lato; color: white; font-size: 16pt;margin-bottom: 8px;margin-top: 8px;">FIN DES INSCRIPTIONS <span style="font-family: 'Lato Black' ">LE 24 MARS 2018</span></p>
             </div>
         </div>
         <div class="spacer2"></div>
@@ -373,11 +374,234 @@
             <div class="col-sm-2 offset-4 align-items-center text-center">
                 <img src="{{asset('/public/images/arrow_head.png')}}" style="height: 65px;">
             </div>
-            <div class="col-2 offset-2 text-center align-self-center h-100">
-                <button type="button" class="btn btn-teser-4" id="reg-btn">REJOINDRE LE DISCORD</button>
+            <div class="col-sm-2 offset-2 text-center align-self-center h-100">
+                <button type="button" class="btn btn-teser-5" id="reg-btn">REJOINDRE LE DISCORD</button>
             </div>
         </div>
     </div>
+</div>
+<div class="about" id="about">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 offset-4 titles text-center">
+                <h4>INFORMATIONS</h4>
+            </div>
+        </div>
+            <div class="about-card">
+                <div class="row justify-content-center">
+                    <div class="col-sm-3 text-center ">
+                        <h4 class="label-teser">LA TESER ? C'EST QUOI ?</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-justify mt-5 mb-5">
+                        <p class="text-justify" style="font-family: Lato; font-size: 16pt;">La TESER, appelée aussi <span style="font-family: 'Lato Black' ">Tournoi ESport des Étudiants Rouennais</span> est un tournoi esport qui se concentre sur deux jeux uniquement : </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <p style="font-family: Lato-Black-Italic; font-size: 16pt; color: #eb005d">LEAGUE OF LEGENDS <span style="font-family: 'Lato' ">et</span> COUNTER STRIKE GLOBAL OFFENSIVE</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 mt-5 mb-3">
+                        <p style="font-family: Lato; font-size: 16pt;">
+                            Cet événement est totalement gratuit et est résérvé exclusivement à tous les étudiants
+                            <span style="font-family: Lato-Black-Italic; font-size: 16pt">de la Métropole Rouen Normandie.</span>
+                            Il est organisé par des étudiants de l’IUT de Rouen et du CESi EXIA. Le tournoi s’organise sous forme de différents matchs hebdomadaires offline avec les deux finales qui se joueront au caffée esport
+                            <span style="font-family: Lato-Black-Italic; font-size: 16pt">le Stormwin Coffee. Pour avoir plus de précisons vous pouvez désormais rejoindre notre Discord en cliquant</span>
+                            <a class="teser-link3" href="">ici.</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 mb-5">
+                        <p style="font-family: Lato-Black-Italic; font-size: 16pt;">De nombreux lots sont à gagner, si vous arrivez à vaincre toutes les équipes bien entendu. :p</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10 offset-1 teser-card pt-5">
+                        <div class="row justify-content-center mb-5">
+                            <div class="col-sm-4 text-center">
+                                <h4 class="label-teser">LES DATES IMPORTANTES</h4>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-sm-4 offset-4 text-center">
+                                <p style="font-family: 'Lato Black'; font-size: 16pt ">LEAGUE OF LEGENDS</p>
+                            </div>
+                        </div>
+                        <div class="row" >
+                            <div class="col-sm-1 offset-2" style="border-right: 2px solid #b40047; border-bottom: 2px solid #b40047;">
+                                <p style="font-family: 'Lato Black'; font-size: 13.87pt ">MATCHS</p>
+                            </div>
+                            <div class="col-sm-2 text-center" style="border-bottom: 2px solid #b40047">
+                                <div class="container">
+                                    <div class="row">
+                                        <p style="font-family: 'Lato'; font-size: 11.9pt ">MER.</p>
+                                    </div>
+                                    <div class="row" style="margin-top: -1.7em">
+                                        <p style="font-family: 'Lato Black'; font-size: 23.8pt ">28 <span style="font-size: 13.88pt">MARS</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 text-center" style="border-bottom: 2px solid #b40047">
+                                <div class="container">
+                                    <div class="row">
+                                        <p style="font-family: 'Lato'; font-size: 11.9pt ">MER.</p>
+                                    </div>
+                                    <div class="row" style="margin-top: -1.7em">
+                                        <p style="font-family: 'Lato Black'; font-size: 23.8pt ">04 <span style="font-size: 13.88pt">AVRIL</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 text-center" style="border-bottom: 2px solid #b40047">
+                                <div class="container">
+                                    <div class="row">
+                                        <p style="font-family: 'Lato'; font-size: 11.9pt ">MER.</p>
+                                    </div>
+                                    <div class="row" style="margin-top: -1.7em">
+                                        <p style="font-family: 'Lato Black'; font-size: 23.8pt ">11 <span style="font-size: 13.88pt">AVRIL</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 text-center" style="border-bottom: 2px solid #b40047">
+                                <div class="container">
+                                    <div class="row">
+                                        <p style="font-family: 'Lato'; font-size: 11.9pt ">MER.</p>
+                                    </div>
+                                    <div class="row" style="margin-top: -1.7em">
+                                        <p style="font-family: 'Lato Black'; font-size: 23.8pt ">18 <span style="font-size: 13.88pt">AVRIL</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" >
+                            <div class="col-sm-1 offset-2" style="border-right: 2px solid #b40047;">
+                                <p style="font-family: 'Lato Black'; font-size: 13.87pt; ">FINALE</p>
+                            </div>
+                            <div class="col-sm-1">
+                                <img style="max-height: 74px" src="{{asset('/public/images/STORMWIN_CAFFEE_LOGO_PINK.png')}}" class="img-fluid">
+                            </div>
+                            <div class="col-sm-2 offset-5 text-center pt-3">
+                                <div class="container">
+                                    <div class="row">
+                                        <p style="font-family: 'Lato'; font-size: 11.9pt ">LUNDI.</p>
+                                    </div>
+                                    <div class="row" style="margin-top: -1.7em">
+                                        <p style="font-family: 'Lato Black'; font-size: 23.8pt ">24 <span style="font-size: 13.88pt">AVRIL</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-sm-4 offset-4 text-center">
+                                <p style="font-family: 'Lato Black'; font-size: 16pt ">COUNTER STRIKE GO</p>
+                            </div>
+                        </div>
+                        <div class="row" >
+                            <div class="col-sm-1 offset-2" style="border-right: 2px solid #b40047; border-bottom: 2px solid #b40047;">
+                                <p style="font-family: 'Lato Black'; font-size: 13.87pt ">MATCHS</p>
+                            </div>
+                            <div class="col-sm-2 text-center" style="border-bottom: 2px solid #b40047">
+                                <div class="container">
+                                    <div class="row">
+                                        <p style="font-family: 'Lato'; font-size: 11.9pt ">MAR.</p>
+                                    </div>
+                                    <div class="row" style="margin-top: -1.7em">
+                                        <p style="font-family: 'Lato Black'; font-size: 23.8pt ">27 <span style="font-size: 13.88pt">MARS</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 text-center" style="border-bottom: 2px solid #b40047">
+                                <div class="container">
+                                    <div class="row">
+                                        <p style="font-family: 'Lato'; font-size: 11.9pt ">MAR.</p>
+                                    </div>
+                                    <div class="row" style="margin-top: -1.7em">
+                                        <p style="font-family: 'Lato Black'; font-size: 23.8pt ">03 <span style="font-size: 13.88pt">AVRIL</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 text-center" style="border-bottom: 2px solid #b40047">
+                                <div class="container">
+                                    <div class="row">
+                                        <p style="font-family: 'Lato'; font-size: 11.9pt ">MAR.</p>
+                                    </div>
+                                    <div class="row" style="margin-top: -1.7em">
+                                        <p style="font-family: 'Lato Black'; font-size: 23.8pt ">10 <span style="font-size: 13.88pt">AVRIL</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 text-center" style="border-bottom: 2px solid #b40047">
+                                <div class="container">
+                                    <div class="row">
+                                        <p style="font-family: 'Lato'; font-size: 11.9pt ">MAR.</p>
+                                    </div>
+                                    <div class="row" style="margin-top: -1.7em">
+                                        <p style="font-family: 'Lato Black'; font-size: 23.8pt ">17 <span style="font-size: 13.88pt">AVRIL</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 5em">
+                            <div class="col-sm-1 offset-2" style="border-right: 2px solid #b40047;">
+                                <p style="font-family: 'Lato Black'; font-size: 13.87pt; ">FINALE</p>
+                            </div>
+                            <div class="col-sm-1">
+                                <img style="max-height: 74px" src="{{asset('/public/images/STORMWIN_CAFFEE_LOGO_PINK.png')}}" class="img-fluid">
+                            </div>
+                            <div class="col-sm-2 offset-5 text-center pt-3">
+                                <div class="container">
+                                    <div class="row">
+                                        <p style="font-family: 'Lato'; font-size: 11.9pt ">MARDI.</p>
+                                    </div>
+                                    <div class="row" style="margin-top: -1.7em">
+                                        <p style="font-family: 'Lato Black'; font-size: 23.8pt ">24 <span style="font-size: 13.88pt">AVRIL</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 mb-5 justify-content-center">
+                    <div class="col-sm-2 text-center ">
+                        <h4 class="label-teser">LES FINALES</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe class="embed-responsive-item" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJCWbULHje4EcROaOd_PJAMTE&key=AIzaSyBLqViswA5OpCVN5flkZuYP0AD-eCR8V5Y" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 offset-1 text-justify">
+                        <p style="font-family: Lato; font-size: 16pt;">Les deux finales auront lieux au caffée esport le <span style="font-family: 'Lato Black' ">Stormwin Coffee à Rouen. </span></p>
+                        <p class="mb-5" style="font-family: Lato; font-size: 16pt;">Voici une carte (ci-contre) qui vous indiquera où se trouve le caffée.</p>
+                        <div class="row mb-5">
+                            <div class="col-sm-12" style="border-top: 1px solid black; margin-top: 26px; margin-bottom: -26px"></div>
+                        </div>
+                        <div class="row" style="margin-top: 6rem">
+                            <div class="col-sm-12 text-center">
+                                <p style="font-family: 'Lato-Black'; font-size: 16pt;">COUNTER STRIKE GLOBAL OFFENSIVE : </p>
+                                <p style="font-family: Forque; font-size: 18pt; color: #eb005d; margin-top: -1rem">MARDI 24 AVRIL</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <p style="font-family: 'Lato-Black'; font-size: 16pt;">LEAGUE OF LEGENDS :</p>
+                                <p style="font-family: Forque; font-size: 18pt; color: #eb005d; margin-top: -1rem">LUNDI 23 AVRIL</p>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-sm-12 text-center">
+                                <p style="font-family: 'Lato-Black'; font-size: 16pt;">BONNE CHANCE À TOUTES ET À TOUS !</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </div>
 
 
