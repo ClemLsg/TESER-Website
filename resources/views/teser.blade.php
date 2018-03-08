@@ -26,7 +26,7 @@
     <script type="text/javascript" src="{{ asset('/public/js/teser.js') }}" ></script>
 </head>
 
-<body>
+<body id="desktop" class="d-none d-sm-block">
 <div class="head-home" style="background: url({{asset('/public/images/background_v2.jpg')}}) ; background-repeat: no-repeat; background-size:cover; background-position: center;">
     <div class="container-fluid" style="padding-top: 25px">
         <div class="row align-items-center">
@@ -505,4 +505,5 @@
     </div>
 </footer>
 </body>
+<body id="mobile" class="d-sm-none"></body>
 </html>
