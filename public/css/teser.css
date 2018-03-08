@@ -18,6 +18,11 @@
     src: url("/TeserGit/public/fonts/Lato-BlackItalic.ttf");
 }
 
+@font-face {
+    font-family: Lato-Italic;
+    src: url("/TeserGit/public/fonts/Lato-Italic.ttf");
+}
+
 
 @font-face {
     font-family: Pacifico;
@@ -107,8 +112,7 @@ h3, h4 {
 .about-card{
     background-color: #ffffff;
     padding: 100px 75px;
-    left: 0;
-    position: absolute;
+    margin-left: -1em;
     width: 100vw;
 }
 
@@ -131,6 +135,7 @@ h3, h4 {
 .register-zone {
     width: 100vw;
     background-color : #222222 ;
+    margin-top: -2em;
 }
 
 label {
@@ -141,14 +146,22 @@ label {
 }
 
 .form-control-teser {
-    border-radius : 26px ;
-    padding: 15px;
+     border-radius : 25px;
+     padding: 10px;
+    font-family: Lato;
+ }
+
+.form-control-teser:after {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 10px;
+    font-family: Lato;
 }
 
 .register-text {
     background-color: white;
     border-radius : 26px ;
-    padding: 50px;
+    padding: 50px 50px 25px;
     height: 100%;
 }
 
@@ -169,10 +182,6 @@ label {
 
 .sponsor-zone {
     background-color: #eb005d;
-}
-
-.footer-teser {
-    padding-top: 200px;
 }
 
 .btn-teser-4{
@@ -300,4 +309,63 @@ label {
     font-family: Forque;
     padding: 5px 40px;
     cursor: pointer;
+}
+
+.form-checkmark-teser {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background: none;
+    cursor: pointer;
+    border: 3px solid #eb005d;
+    margin-left: 0.5em;
+}
+
+.form-check-label-teser{
+    display: block;
+    position: relative;
+    display: block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Lato;
+    font-size: 16pt;
+    color: black;
+}
+
+.form-check-label-teser input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.form-check-label-teser:hover input ~ .form-checkmark-teser {
+    border: 3px solid rgba(140,0,55,1);
+}
+
+.form-check-label-teser input:checked ~ .form-checkmark-teser {
+    background: none;
+}
+
+.form-checkmark-teser:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.form-check-label-teser input:checked ~ .form-checkmark-teser:after {
+    display: block;
+}
+
+.form-check-label-teser .form-checkmark-teser:after {
+    left: 0.35em;
+    top: 0.2em;
+    width: 5px;
+    height: 10px;
+    border: solid #eb005d;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
