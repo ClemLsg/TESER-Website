@@ -417,30 +417,26 @@
 </div>
 <div class="sponsor-zone">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-4 offset-4 titles text-center">
-                <br>
-                <h4 style="font-size: 22.73pt">MERCI A NOS PARTENAIRES</h4>
-                <br>
-                <br>
-                <br>
+        <div class="row justify-content-center">
+            <div class="col-sm-4 text-center">
+                <p class="mt-5 mb-5" style="font-size: 22.73pt; color: white; font-family: Forque">MERCI A NOS PARTENAIRES</p>
             </div>
         </div>
         <div class="row align-items-center">
             <div class="col-sm-2 offset-1 text-center">
-                <img src="{{asset('/public/images/BDE_LABETE_LOGO.png')}}" style="width: 136px">
+                <img src="{{asset('/public/images/BDE_LABETE_LOGO.png')}}" style="max-width: 136px">
             </div>
             <div class="col-sm-2 text-center">
-                <img src="{{asset('/public/images/CESPORT_LOGO.png')}}" style="width: 136px">
+                <img src="{{asset('/public/images/CESPORT_LOGO.png')}}" style="max-width: 136px">
             </div>
             <div class="col-sm-2 text-center">
-                <img src="{{asset('/public/images/UNIVROUEN_LOGO.png')}}" style="width: 136px">
+                <img src="{{asset('/public/images/UNIVROUEN_LOGO.png')}}" style="max-width: 136px">
             </div>
             <div class="col-sm-2 text-center">
                 <img src="{{asset('/public/images/STORMWIN_CAFFEE_LOGO.png')}}" style="width: 136px">
             </div>
             <div class="col-sm-2 text-center">
-                <img src="{{asset('/public/images/CESI_LOGO.png')}}" style="width: 136px; filter: brightness(0) invert(1);">
+                <img src="{{asset('/public/images/cesi.png')}}" style="filter: brightness(0) invert(1);" class="img-fluid">
             </div>
         </div>
         <br>
