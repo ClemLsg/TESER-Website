@@ -62,16 +62,34 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return (new \App\User)->create([
+        $user = (new \App\User)->create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
             'game' => $data['game'],
-            'player1' => $data['player1'],
-            'player2' => $data['player2'],
-            'player3' => $data['player3'],
-            'player4' => $data['player4'],
-            'player5' => $data['player5'],
         ]);
+        $player1 = (new \App\Player)->create([
+            'name' => $data['player1'],
+            'email' => $data['email'],
+        ]);
+        $player2 = (new \App\Player)->create([
+            'name' => $data['player2'],
+        ]);
+        $player3 = (new \App\Player)->create([
+            'name' => $data['player3'],
+        ]);
+        $player4 = (new \App\Player)->create([
+            'name' => $data['player4'],
+        ]);
+        $player5 = (new \App\Player)->create([
+            'name' => $data['player5'],
+        ]);
+        $user->players()->save($player1);
+        $user->players()->save($player2);
+        $user->players()->save($player3);
+        $user->players()->save($player4);
+        $user->players()->save($player5);
+
+        return $user;
     }
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('/public/images/favicon.ico')}}">
     <title>Login</title>
     <link href="{{ asset('/public/css/bootstrap.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('/public/css/teser.css') }}" rel="stylesheet" type="text/css">
@@ -16,22 +17,22 @@
     <script type="text/javascript" src="{{ asset('/public/js/teser.js') }}" ></script>
 </head>
 <body>
-    <div class="container-fluid" style="background: url({{asset('/public/images/HEADER_IMG.png')}}); height: 100vh; width: 100vw; z-index: 20">
+    <div class="container-fluid" style="background: url({{asset('/public/images/background_v2.jpg')}}); height: 100vh; width: 100vw; z-index: 20">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-2 offset-5">
-                    <img src="{{asset('/public/images/LOGO_officiel.png')}}" class="img-fluid" style="z-index: 20">
+                <div class="col-sm-4 offset-4 text-center mb-5" style="margin-top: 6rem">
+                    <p style="font-family: Forque; font-size: 30pt; color: white;">CONNECTION AU PANEL UTILISATEUR</p>
                 </div>
             </div>
-            <div class="row" style="margin-top: -55px; z-index: 1">
-                <div class="col-sm-4 offset-4 login-card" align="center">
+            <div class="row">
+                <div class="col-sm-4 offset-4" align="center">
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <label for="email" class="col-md-12 control-label">EMAIL DU CHEF DE L'EQUIPE</label>
 
-                            <div class="col-md-12">
+                            <div class="col-md-10">
                                 <input id="email" type="email" class="form-control form-control-teser" name="email" value="{{ old('email') }}" required autofocus>
 
                                 @if ($errors->has('email'))
@@ -44,7 +45,7 @@
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-12 control-label">MOT DE PASSE</label>
 
-                            <div class="col-md-12">
+                            <div class="col-md-10">
                                 <input id="password" type="password" class="form-control form-control-teser" name="password" required>
 
                                 @if ($errors->has('password'))
@@ -65,27 +66,26 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-teser">
-                                    SE CONNECTER
-                                </button>
-
                                 <a class="btn teser-link" href="{{ route('password.request') }}">
                                     Mot de passe oublié ?
                                 </a>
+                                <button type="submit" class="btn btn-teser-4">
+                                    SE CONNECTER
+                                </button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
-            <div style="position: fixed; bottom: 0px; width: 100vw; left: 0px">
+            <div style="position: fixed; bottom: 0px; width: 100vw; left: 0px" class="mb-3">
                 <div class="row justify-content-center">
                     <div class="col-sm-1">
                         <img src="{{asset('/public/images/BANNER_LOGO_DEGRADE_officiel.png')}}" class="img-fluid">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-4 offset-4" style="color: white; text-align: center">
-                        <h4>@2018 TESER.FR</h4>
+                <div class="row mt-2">
+                    <div class="col-sm-4 offset-4" style="color: white; text-align: center;">
+                        <p style="font-family: Lato-Black; font-size: 12pt">@2018 TESER.FR</p>
                     </div>
                 </div>
             </div>

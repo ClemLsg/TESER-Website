@@ -158,6 +158,24 @@ label {
     font-family: Lato;
 }
 
+.form-control-teser-alt {
+    border-radius : 25px;
+    background-color: #eeeeee;
+    color: #b5b5b5;
+    padding: 10px;
+    font-family: Lato-Black;
+    font-size: 9pt;
+}
+
+.form-control-teser-alt:after {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 10px;
+    font-family: Lato-Black;
+    font-size: 9pt;
+}
+
+
 .register-text {
     background-color: white;
     border-radius : 26px ;
@@ -191,7 +209,18 @@ label {
     font-size : 18pt ;
     font-weight : 400 ;
     font-family: Forque;
-    padding: 15px 25px;
+    padding: 0.3em 25px;
+    cursor: pointer;
+}
+
+.btn-teser-4:hover{
+    background-color: #eb005d;
+    border-radius : 26px ;
+    color: white;
+    font-size : 18pt ;
+    font-weight : 400 ;
+    font-family: Forque;
+    padding: 0.3em 25px;
     cursor: pointer;
 }
 
@@ -308,7 +337,6 @@ label {
     font-weight : 400 ;
     font-family: Forque;
     padding: 5px 40px;
-    cursor: pointer;
 }
 
 .form-checkmark-teser {
@@ -368,4 +396,93 @@ label {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+.teser-shadow {
+    -webkit-box-shadow: 0px 0px 300px -118px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 300px -118px rgba(0,0,0,1);
+    box-shadow: 0px 0px 300px -118px rgba(0,0,0,1);
+}
+
+.teser-machin-rose {
+    background-color: #eb005d;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+*{
+    letter-spacing: 0.075em;
+}
+
+label {
+    font-size: 12.29pt;
+}
+
+.teser-machin-bleu {
+    background-color: #001846;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 12pt;
+    font-family: FORQUE;
+    letter-spacing: 0.075em;
+    /* 20px */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    font-weight: normal;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+.inputfile-1 + label {
+    color: #f1e5e6;
+    background-color: #001846;
+    border-radius: 26px;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+    background-color: #001846;
 }
