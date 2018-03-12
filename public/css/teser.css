@@ -70,6 +70,10 @@ h3, h4 {
     cursor: pointer;
 }
 
+.btn-teser:focus{
+    color: white;
+}
+
 .btn-teser-2{
     border-radius: 0;
     width: 244px;
@@ -85,6 +89,10 @@ h3, h4 {
     cursor: pointer;
 }
 
+.btn-teser-2:focus{
+    color: white;
+}
+
 .btn-teser-3{
     border-radius: 0;
     width: 244px;
@@ -98,6 +106,14 @@ h3, h4 {
     -moz-box-shadow: 8px 8px 0px 2px white;
     box-shadow: 8px 8px 0px 2px white;
     cursor: pointer;
+}
+
+.btn-teser-3:focus{
+    color: white;
+}
+
+.btn-teser-4:focus{
+    color: white;
 }
 
 .thirdheight{
@@ -485,4 +501,25 @@ label {
 .inputfile-1.has-focus + label,
 .inputfile-1 + label:hover {
     background-color: #001846;
+}
+
+.lien-casse-couille {
+    font-family: 'Lato Black';
+    color: white;
+    text-decoration: none;
+    text-underline: none;
+}
+.lien-casse-couille:hover {
+    font-family: 'Lato Black';
+    color: white;
+    text-decoration: none;
+    text-underline: none;
+}
+
+.mobile-menu {
+    height: 100vh;
+    width: 100vw;
+    background-color: #eb005d;
+    position: absolute;
+    z-index: 100;
 }

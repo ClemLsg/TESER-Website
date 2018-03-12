@@ -55,4 +55,14 @@ $(document).ready(function() {
             .on( 'focus', function(){ $input.addClass( 'has-focus' ); })
             .on( 'blur', function(){ $input.removeClass( 'has-focus' ); });
     });
+
+    $( ".mobile-menu" ).hide();
+
+    $("#close-mobile").click(function() {
+        $( ".mobile-menu" ).toggle( "slide", {direction: 'right'} );
+    });
+
+    $("#open-mobile").click(function() {
+        $( ".mobile-menu" ).toggle( "slide", {direction: 'right'} );
+    });
 });

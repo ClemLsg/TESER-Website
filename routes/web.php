@@ -21,3 +21,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/compte', 'CompteController@index')->name('compte');
 Route::post('/compte', 'CompteController@update')->name('update');
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout' );
+Route::get('/mail', function () {
+    return view('email');
+});

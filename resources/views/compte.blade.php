@@ -6,7 +6,7 @@
  * Time: 13:33
  */
 ?>
-        <!doctype html>
+<!doctype html>
 <html lang="fr">
 <html lang="en">
 <head>
@@ -28,7 +28,7 @@
     <script type="text/javascript" src="{{ asset('/public/js/teser.js') }}" ></script>
 </head>
 <body>
-<header style="background: url({{asset('/public/images/background_v2.jpg')}}) no-repeat fixed center;">
+<header style="background: url({{asset('/public/images/fond.jpg')}}) no-repeat fixed center;">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
@@ -62,9 +62,9 @@
         </div>
     </div>
 </header>
-<div class="container-fluid" style="background-color: #eeeeee; height: 100vh; overflow-x: hidden">
+<div class="container-fluid" style="background-color: #eeeeee; overflow-x: hidden">
     <div class="row">
-        <div class="col-sm-3" style="height: 100vh; background-color: white;">
+        <div class="col-sm-3" style=" background-color: white;">
             <div class="row">
                 <div class="col-sm-12 text-center pt-4">
                     <p style="font-family: Forque; font-size: 24pt; color: #001846; letter-spacing: 0.075em">LISTE DES JOUEURS</p>

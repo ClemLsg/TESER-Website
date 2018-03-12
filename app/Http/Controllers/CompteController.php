@@ -77,9 +77,11 @@ class CompteController extends Controller
             $filename = Auth::user()->name . '_' . $name . '_certif'. '.' . $certif->getClientOriginalExtension();
             $user = Player::where('name', 'Like', $name)->update(['file' => $filename]);
             $certif->move('public/certifs',$filename);
+
+            return redirect()->back()->with("success","Fichier uploadé avec succès !");
         }
 
-        return redirect()->route('compte');
+        return redirect()->back()->with("success","Email changé avec succès !");
     }
 
 }

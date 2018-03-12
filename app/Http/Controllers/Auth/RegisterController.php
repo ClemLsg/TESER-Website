@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Mail\NewUserWelcome;
 use App\User;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -89,6 +92,14 @@ class RegisterController extends Controller
         $user->players()->save($player3);
         $user->players()->save($player4);
         $user->players()->save($player5);
+
+        $email = $data['email'];
+
+        Mail::send('email', $data, function ($message) use ($email) {
+            $message->from('noreply@teser.fr', 'Inscription');
+
+            $message->to($email)->subject('Bienvenue !');
+        });
 
         return $user;
     }

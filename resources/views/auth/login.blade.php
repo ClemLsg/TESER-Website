@@ -17,7 +17,7 @@
     <script type="text/javascript" src="{{ asset('/public/js/teser.js') }}" ></script>
 </head>
 <body>
-    <div class="container-fluid" style="background: url({{asset('/public/images/background_v2.jpg')}}); height: 100vh; width: 100vw; z-index: 20">
+    <div class="container-fluid" style="background: url({{asset('/public/images/fond.jpg')}}); height: 100vh; width: 100vw; z-index: 20 ; background-repeat: no-repeat; background-size:cover; background-position: center;">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4 offset-4 text-center mb-5" style="margin-top: 6rem">

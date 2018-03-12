@@ -13,14 +13,17 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Le TournoiE-Sport des Etudiants Rouennais,est une compétition de jeux vidéo réservée aux étudiants du supérieur localisés dans la Métropole Rouen Normandie.Elle est la première compétition ouverte exclusivement aux Étudiants dans la Région et ce totalement gratuitement.">
+    <meta name="keywords" content="rouen esport lol cs:go étudiant université cesi web tournoi jeux-videos bar fun argent prix cadeaux">
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('/public/images/favicon.ico')}}">
-    <title>Teser</title>
+    <title>Teser Rouen</title>
     <link href="{{ asset('/public/css/bootstrap.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('/public/css/teser.css') }}" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+            integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+            crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{{ asset('/public/js/bootstrap.js') }}" ></script>
     <script type="text/javascript" src="{{ asset('/public/js/teser.js') }}" ></script>
@@ -28,7 +31,7 @@
 
 <body>
 <div id="desktop" class="d-none d-sm-block">
-    <div class="head-home" style="background: url({{asset('/public/images/background_v2.jpg')}}) ; background-repeat: no-repeat; background-size:cover; background-position: center;">
+    <div class="head-home" style="background: url({{asset('/public/images/fond.jpg')}}) ; background-repeat: no-repeat; background-size:cover; background-position: center;">
         <div class="container-fluid" style="padding-top: 25px">
             <div class="row align-items-center" style="position: relative; z-index: 5;">
                 <div class="col-sm-2 text-center">
@@ -62,10 +65,10 @@
             <div class="spacer2"></div>
             <div class="row justify-content-center">
                 <div class="col-sm-2 offset-4 align-items-center text-center">
-                    <a id="info-arr"><img src="{{asset('/public/images/arrow_head.png')}}" style="height: 65px; cursor: pointer"></a>
+                    <a class="Bounce" id="info-arr"><img src="{{asset('/public/images/arrow_head.png')}}" style="height: 65px; cursor: pointer"></a>
                 </div>
                 <div class="col-sm-2 offset-2 text-center align-self-center h-100">
-                    <button type="button" class="btn btn-teser-5" id="reg-btn">REJOINDRE LE DISCORD</button>
+                    <a class="btn btn-teser-5" id="reg-btn" href="https://discord.gg/ypnXAd2" target="_blank">REJOINDRE LE DISCORD</a>
                 </div>
             </div>
         </div>
@@ -80,7 +83,7 @@
             <div class="about-card">
                 <div class="row justify-content-center">
                     <div class="col-sm-4 text-center ">
-                        <h4 class="label-teser">LA TESER ? C'EST QUOI ?</h4>
+                        <h4 class="label-teser">LE TESER ? C'EST QUOI ?</h4>
                     </div>
                 </div>
                 <div class="row">
@@ -94,13 +97,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 mt-5 mb-3">
+                    <div class="col-sm-12 mt-5 mb-3 text-justify">
                         <p style="font-family: Lato; font-size: 16pt;">
                             Cet événement est totalement gratuit et est résérvé exclusivement à tous les étudiants
                             <span style="font-family: Lato-Black-Italic; font-size: 16pt">de la Métropole Rouen Normandie.</span>
-                            Il est organisé par des étudiants de l’IUT de Rouen et du CESi EXIA. Le tournoi s’organise sous forme de différents matchs hebdomadaires offline avec les deux finales qui se joueront au caffée esport
+                            Il est organisé par des étudiants de l’IUT de Rouen et du CESi EXIA. Le tournoi s’organise sous forme de différents matchs hebdomadaires online avec les deux finales qui se joueront au café esport
                             <span style="font-family: Lato-Black-Italic; font-size: 16pt">le Stormwin Coffee. Pour avoir plus de précisons vous pouvez désormais rejoindre notre Discord en cliquant</span>
-                            <a class="teser-link3" href="">ici.</a>
+                            <a class="teser-link3" href="https://discord.gg/ypnXAd2" target="_blank">ici.</a>
                         </p>
                     </div>
                 </div>
@@ -179,7 +182,7 @@
                                         <p style="font-family: 'Lato'; font-size: 11.9pt ">LUNDI.</p>
                                     </div>
                                     <div class="row" style="margin-top: -1.7em">
-                                        <p style="font-family: 'Lato Black'; font-size: 23.8pt ">24 <span style="font-size: 13.88pt">AVRIL</span></p>
+                                        <p style="font-family: 'Lato Black'; font-size: 23.8pt ">23 <span style="font-size: 13.88pt">AVRIL</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -266,8 +269,8 @@
                         </div>
                     </div>
                     <div class="col-sm-5 offset-1 text-justify">
-                        <p style="font-family: Lato; font-size: 16pt;">Les deux finales auront lieux au caffée esport le <span style="font-family: 'Lato Black' ">Stormwin Coffee à Rouen. </span></p>
-                        <p class="mb-5" style="font-family: Lato; font-size: 16pt;">Voici une carte (ci-contre) qui vous indiquera où se trouve le caffée.</p>
+                        <p style="font-family: Lato; font-size: 16pt;">Les deux finales auront lieux au café esport le <span style="font-family: 'Lato Black' ">Stormwin Coffee à Rouen. </span></p>
+                        <p class="mb-5" style="font-family: Lato; font-size: 16pt;">Voici une carte (ci-contre) qui vous indiquera où se trouve le café.</p>
                         <div class="row mb-5">
                             <div class="col-sm-12" style="border-top: 1px solid black; margin-top: 26px; margin-bottom: -26px"></div>
                         </div>
@@ -317,8 +320,8 @@
                                 <div class="form-group">
                                     <label for="game">VEUILLEZ CHOISIR LE JEU</label>
                                     <select class="form-control form-control-teser" id="game" name="game" style="height: 42px;" required>
-                                        <option value="Lol">League Of legend</option>
-                                        <option value="Cs">Counter Strike Global Offesnive</option>
+                                        <option value="Lol">League of Legends</option>
+                                        <option value="Cs">Counter Strike Global Offensive</option>
                                     </select>
                                 </div>
                             </div>
@@ -349,7 +352,7 @@
                         <div class="row mb-3">
                             <div class="col-sm-3">
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-teser" placeholder="Joueur 1" name="player1" required>
+                                    <input type="text" class="form-control form-control-teser" placeholder="Chef d'équipe" name="player1" required>
                                 </div>
                             </div>
                             <div class="col-sm-3">
@@ -393,9 +396,9 @@
                                             <div class="col-sm-12">
                                                 <p class="text-justify" style="font-family: Lato; font-size: 16pt;">Les équipes doivent être <span style="font-family: 'Lato Black' ">obligatoirement composées de 5 joueurs sans remplacant.</span></p>
                                                 <h4>&nbsp;</h4>
-                                                <p class="text-justify" style="font-family: Lato; font-size: 16pt;">Les joueurs doivent <span style="font-family: 'Lato Black' ">être étudiants de la métropole Rouen Normandie. (Un certificat de scolarité vous sera demandé dans votre pannel utilisateur.)</span></p>
+                                                <p class="text-justify" style="font-family: Lato; font-size: 16pt;">Les joueurs doivent <span style="font-family: 'Lato Black' ">être étudiants de la métropole Rouen Normandie. (Un certificat de scolarité vous sera demandé dans votre panel utilisateur.)</span></p>
                                                 <h4>&nbsp;</h4>
-                                                <p style="font-family: Lato-Black-Italic; font-size: 16pt; color: #eb005d">L’inscription de votre équipe doit être faite qu’avec votre chef d’équipe seulement.</p>
+                                                <p style="font-family: Lato-Black-Italic; font-size: 16pt; color: #eb005d">L’inscription de votre équipe ne doit être faite qu’avec votre chef d’équipe seulement.</p>
                                                 <div class="col-sm-12 text-right">
                                                     <div class="form-check">
                                                         <label class="form-check-label-teser">J'AI VU CE MESSAGE
@@ -427,21 +430,24 @@
                     <p class="mt-5 mb-5" style="font-size: 22.73pt; color: white; font-family: Forque">MERCI A NOS PARTENAIRES</p>
                 </div>
             </div>
-            <div class="row align-items-center">
-                <div class="col-sm-2 offset-1 text-center">
+            <div class="row justify-content-center">
+                <div class="col-sm-1 text-center">
                     <img src="{{asset('/public/images/BDE_LABETE_LOGO.png')}}" style="max-width: 136px">
                 </div>
-                <div class="col-sm-2 text-center">
+                <div class="col-sm-1 offset-1 text-center">
                     <img src="{{asset('/public/images/CESPORT_LOGO.png')}}" style="max-width: 136px">
                 </div>
-                <div class="col-sm-2 text-center">
+                <div class="col-sm-1 offset-1 text-center">
                     <img src="{{asset('/public/images/UNIVROUEN_LOGO.png')}}" style="max-width: 136px">
                 </div>
-                <div class="col-sm-2 text-center">
+                <div class="col-sm-1 offset-1 text-center">
                     <img src="{{asset('/public/images/STORMWIN_CAFFEE_LOGO.png')}}" style="width: 136px">
                 </div>
-                <div class="col-sm-2 text-center">
+                <div class="col-sm-1 offset-1 text-center">
                     <img src="{{asset('/public/images/cesi.png')}}" style="filter: brightness(0) invert(1);" class="img-fluid">
+                </div>
+                <div class="col-sm-1 offset-1 text-center">
+                    <img src="{{asset('/public/images/societe_generale.png')}}" class="img-fluid">
                 </div>
             </div>
             <br>
@@ -449,13 +455,13 @@
             <br>
         </div>
     </div>
-    <footer class="footer-teser pb-5 pt-5" style="background: url({{asset('/public/images/background_v2.jpg')}}); background-repeat: no-repeat; background-size:cover; background-position: center;">
+    <footer class="footer-teser pb-5 pt-5" style="background: url({{asset('/public/images/fond.jpg')}}); background-repeat: no-repeat; background-size:cover; background-position: center;">
         <div class="container-fluid" style="margin-top: 3rem">
             <div class="row">
                 <div class="col-sm-6">
                     <div class="row justify-content-center mb-4">
                         <div class="col-sm-6 text-center h-100">
-                            <button type="button" class="btn btn-teser-5" id="reg-btn">LIENS UTILES</button>
+                            <p class="btn btn-teser-5" id="reg-btn" style="cursor: default;">LIENS UTILES</p>
                         </div>
                     </div>
                     <div class="row justify-content-center mb-4">
@@ -465,10 +471,7 @@
                     </div>
                     <div class="row justify-content-center mb-5">
                         <div class="col-sm-1">
-                            <img class="img-fluid" src="{{asset('/public/images/Facebook.png')}}">
-                        </div>
-                        <div class="col-sm-1 offset-1">
-                            <img class="img-fluid" src="{{asset('/public/images/Twitter.png')}}">
+                            <a href="https://www.facebook.com/TeserRouen/" target="_blank"><img class="img-fluid" src="{{asset('/public/images/Facebook.png')}}"></a>
                         </div>
                     </div>
                 </div>
@@ -476,7 +479,7 @@
                     <p style="font-family: 'Lato Black'; font-size: 10.84pt; color: white;  text-transform: uppercase">tu veux nous poser une question ?
                         ou bien parler avec les autres participants ?</p>
                     <p style="font-family: 'Lato Black'; font-size: 14pt; color: white;  text-transform: uppercase">rejoins notre discord des maintenant :D</p>
-                    <button type="button" class="btn btn-teser-4">REJOINDRE LE DISCORD</button>
+                    <a class="btn btn-teser-4" href="https://discord.gg/ypnXAd2" target="_blank">REJOINDRE LE DISCORD</a>
                 </div>
             </div>
             <div class="row" style="margin-top: 9rem">
@@ -494,12 +497,12 @@
             </div>
             <div class="row">
                 <div class="col-sm-2 offset-5 text-center">
-                    <p style="font-family: Lato-Italic; font-size: 12pt; color: white">WEBDEV BY <span style="font-family: 'Lato Black' ">CES'ESPORT</span></p>
+                    <p style="font-family: Lato-Italic; font-size: 12pt; color: white">WEBDEV BY <a class="lien-casse-couille" href="https://ces-esport.fr"><span>CES'ESPORT</span></a></p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 offset-4 text-center">
-                    <p style="font-family: Lato-Italic; font-size: 12pt; color: white">LOGO ET WEBDESIGN BY <span style="font-family: 'Lato Black' ">BACHELET JULIEN</span></p>
+                    <p style="font-family: Lato-Italic; font-size: 12pt; color: white">LOGO ET WEBDESIGN BY <a class="lien-casse-couille" href="https://twitter.com/Jvblt_"><span style="font-family: 'Lato Black' ">BACHELET JULIEN</span></a></p>
                 </div>
             </div>
             <div class="row mt-5">
@@ -512,44 +515,76 @@
 </div>
 
 <div id="mobile" class="d-sm-none d-block">
-    <div class="head-home" style="background: url({{asset('/public/images/Bg_Mobile.png')}}) ; background-repeat: no-repeat; background-size:cover; background-position: center;">
-    <div class="container-fluid" style="padding-top: 25px;">
-        <div class="row justify-content-around" style="position: relative; z-index: 5;">
+    <div class="mobile-menu">
+        <div class="row justify-content-around mt-4" style="position: relative; z-index: 5;">
             <div class="col-5 text-center">
-                <img src="{{asset('/public/images/BANNER_LOGO_DEGRADE_officiel.png')}}" style="width: 129px;">
+                <img src="{{asset('/public/images/BANNER_LOGO_officiel2.png')}}" style="width: 129px;">
             </div>
             <div class="col-5 text-center">
-                <div style="position: absolute; top: 50%; left:50%; transform: translate(-50%,-50%);">
-                    <img src="{{asset('/public/images/button_mobile.png')}}" style="height: 32px; width: 32px;">
+                <div id="close-mobile" style="position: absolute; top: 50%; left:50%; transform: translate(-50%,-50%);">
+                    <img src="{{asset('/public/images/button_mobile_cross.png')}}" style="height: 32px; width: 32px;">
                     <p style="color: white; font-family: Lato">Menu</p>
                 </div>
-
             </div>
         </div>
-        <div class="row justify-content-center" style="height: 80vh; width:  100vw; position:  absolute; top: 0; overflow: hidden">
-            <div class="col-12 align-self-center text-center">
-                <img src="{{asset('/public/images/titre_head.png')}}" class="img-fluid">
+        <div class="row mb-5" style="margin-top: 9rem">
+            <div class="col-12 text-center">
+                <a  href="#" style="font-family: Lato; color: white; font-size: 18pt; text-decoration: none" ><p>INFORMATIONS</p></a>
             </div>
         </div>
-        <div class="spacer" style="height: 40vh;"></div>
-        <div class="row">
-            <div class="col-sm-12 text-center align-self-center">
-                <p style="font-family: Lato-Black; color: white; font-size: 16pt;margin-bottom: 8px;margin-top: 8px;">FIN DES INSCRIPTIONS <span style="font-family: 'Lato Black' ">LE 24 MARS 2018</span></p>
+        <div class="row mt-5 mb-5">
+            <div class="col-12 text-center">
+                <a href="#"  style="font-family: Lato; color: white; font-size: 18pt; text-decoration: none"><p>INSCRIPTIONS</p></a>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-sm-2 text-center align-self-center h-100">
-                <button type="button" class="btn btn-teser-4" id="reg-btn">INSCRIPTIONS</button>
-            </div>
-            <div class="col-sm-2 text-center align-self-center h-100" style="margin-bottom: 5vh">
-                <button type="button" class="btn btn-teser-5" id="reg-btn">REJOINDRE LE DISCORD</button>
-            </div>
-            <div class="col-sm-2 align-items-center text-center">
-                <a id="info-arr"><img src="{{asset('/public/images/arrow_head.png')}}" style="height: 65px; cursor: pointer"></a>
+        <div class="row mt-5 mb-5">
+            <div class="col-12 text-center">
+                @guest
+                    <a class="align-middle" href="{{route('login')}}" style="font-family: Lato; color: white; font-size: 18pt; text-decoration: none">SE CONNECTER</a>
+                @else
+                    <a class="align-middle" href="{{route('compte')}}" style="font-family: Lato; color: white; font-size: 18pt; text-decoration: none">MON COMPTE</a>
+                @endguest
             </div>
         </div>
     </div>
-</div>
+    <div class="head-home" style="background: url({{asset('/public/images/Bg_Mobile.png')}}) ; background-repeat: no-repeat; background-size:cover; background-position: center;">
+        <div class="container-fluid" style="padding-top: 25px;">
+            <div class="row justify-content-around" style="position: relative; z-index: 5;">
+                <div class="col-5 text-center">
+                    <img src="{{asset('/public/images/BANNER_LOGO_DEGRADE_officiel.png')}}" style="width: 129px;">
+                </div>
+                <div class="col-5 text-center">
+                    <div id="open-mobile" style="position: absolute; top: 50%; left:50%; transform: translate(-50%,-50%);">
+                        <img src="{{asset('/public/images/button_mobile.png')}}" style="height: 32px; width: 32px;">
+                        <p style="color: white; font-family: Lato">Menu</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row justify-content-center" style="height: 80vh; width:  100vw; position:  absolute; top: 0; overflow: hidden">
+                <div class="col-12 align-self-center text-center">
+                    <img src="{{asset('/public/images/titre_head.png')}}" class="img-fluid">
+                </div>
+            </div>
+            <div class="spacer" style="height: 40vh;"></div>
+            <div class="row">
+                <div class="col-sm-12 text-center align-self-center">
+                    <p style="font-family: Lato-Black; color: white; font-size: 16pt;margin-bottom: 8px;margin-top: 8px;">FIN DES INSCRIPTIONS <span style="font-family: 'Lato Black' ">LE 24 MARS 2018</span></p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-2 mt-3 text-center align-self-center h-100">
+                    <button type="button" class="btn btn-teser-4" id="reg-btn" style="font-size: 15pt">INSCRIPTIONS</button>
+                </div>
+                <div class="col-sm-2 mt-4 text-center align-self-center h-100" style="margin-bottom: 5vh">
+                    <a type="button" href="https://discord.gg/ypnXAd2" class="btn btn-teser-5" id="reg-btn" style="font-size: 15pt">REJOINDRE LE DISCORD</a>
+                </div>
+                <div class="col-sm-2 align-items-center text-center">
+                    <a id="info-arr"><img src="{{asset('/public/images/arrow_head.png')}}" style="height: 65px; cursor: pointer"></a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="about" id="about">
         <div class="container-fluid">
             <div class="row justify-content-center">
@@ -575,7 +610,7 @@
                             <span style="font-family: Lato-Black-Italic; font-size: 16pt">de la Métropole Rouen Normandie.</span>
                             Il est organisé par des étudiants de l’IUT de Rouen et du CESi EXIA. Le tournoi s’organise sous forme de différents matchs hebdomadaires offline avec les deux finales qui se joueront au caffée esport
                             <span style="font-family: Lato-Black-Italic; font-size: 16pt">le Stormwin Coffee. Pour avoir plus de précisons vous pouvez désormais rejoindre notre Discord en cliquant</span>
-                            <a class="teser-link3" href="">ici.</a>
+                            <a class="teser-link3" href="https://discord.gg/ypnXAd2">ici.</a>
                         </p>
                     </div>
                 </div>
@@ -822,14 +857,14 @@
                         <div class="row mb-5 justify-content-center">
                             <div class="col-10">
                                 <div class="form-group">
-                                    <label for="name">ENTREZ LE NOM DE VOTRE ÉQUIPE</label>
-                                    <input type="text" class="form-control form-control-teser" id="name" name="name" required>
+                                    <label for="name-mobile">ENTREZ LE NOM DE VOTRE ÉQUIPE</label>
+                                    <input type="text" class="form-control form-control-teser" id="name-mobile" name="name" required>
                                 </div>
                             </div>
                             <div class="col-10">
                                 <div class="form-group">
-                                    <label for="game">VEUILLEZ CHOISIR LE JEU</label>
-                                    <select class="form-control form-control-teser" id="game" name="game" style="height: 42px;" required>
+                                    <label for="game-mobile">VEUILLEZ CHOISIR LE JEU</label>
+                                    <select class="form-control form-control-teser" id="game-mobile" name="game" style="height: 42px;" required>
                                         <option value="Lol">League Of legend</option>
                                         <option value="Cs">Counter Strike Global Offesnive</option>
                                     </select>
@@ -839,26 +874,26 @@
                         <div class="row mb-5 justify-content-center">
                             <div class="col-10">
                                 <div class="form-group">
-                                    <label for="password">ENTREZ VOTRE MOT DE PASSE</label>
-                                    <input type="password" class="form-control form-control-teser" id="password" name="password" required>
+                                    <label for="password-mobile">ENTREZ VOTRE MOT DE PASSE</label>
+                                    <input type="password" class="form-control form-control-teser" id="password-mobile" name="password" required>
                                 </div>
                             </div>
                             <div class="col-10">
                                 <div class="form-group">
-                                    <label for="passwordcheck">RÉÉCRIVEZ VOTRE MOT DE PASSE</label>
-                                    <input type="password" class="form-control form-control-teser" id="passwordcheck" name="password_confirmation" required>
+                                    <label for="passwordcheck-mobile">RÉÉCRIVEZ VOTRE MOT DE PASSE</label>
+                                    <input type="password" class="form-control form-control-teser" id="passwordcheck-mobile" name="password_confirmation" required>
                                 </div>
                             </div>
                         </div>
                         <div class="row mb-5 justify-content-center">
                             <div class="col-10">
                                 <div class="form-group">
-                                    <label for="email">ENTREZ L'EMAIL DE VOTRE CHEF D'ÉQUIPE</label>
-                                    <input type="email" class="form-control form-control-teser" id="email" name="email" required>
+                                    <label for="email-mobile">ENTREZ L'EMAIL DE VOTRE CHEF D'ÉQUIPE</label>
+                                    <input type="email" class="form-control form-control-teser" id="email-mobile" name="email" required>
                                 </div>
                             </div>
                         </div>
-                        <label for="exampleInputEmail1">ENTREZ LE PRENOM (OU PSEUDO) DE CHACUN DES MEMBRES DE VOTRE EQUIPE :</label>
+                        <label for="exampleInputEmail1-mobile">ENTREZ LE PRENOM (OU PSEUDO) DE CHACUN DES MEMBRES DE VOTRE EQUIPE :</label>
                         <div class="row mb-3">
                             <div class="col-3">
                                 <div class="form-group">
@@ -891,7 +926,7 @@
                         </div>
                         <div class="row mb-5 justify-content-center">
                             <div class="col-2 text-center align-self-center h-100">
-                                <button id="sub-btn" type="submit" class="btn btn-teser-4">S<span>'</span>INSCRIRE</button>
+                                <button id="sub-btn-mobile" type="submit" class="btn btn-teser-4">S<span>'</span>INSCRIRE</button>
                             </div>
                         </div>
                     </div>
@@ -935,7 +970,7 @@
                     <p style="font-family: 'Lato Black'; font-size: 10.84pt; color: white;  text-transform: uppercase">tu veux nous poser une question ?
                         ou bien parler avec les autres participants ?</p>
                     <p style="font-family: 'Lato Black'; font-size: 14pt; color: white;  text-transform: uppercase">rejoins notre discord des maintenant :D</p>
-                    <button type="button" class="btn btn-teser-4">REJOINDRE LE DISCORD</button>
+                    <a href="https://discord.gg/ypnXAd2" class="btn btn-teser-4">REJOINDRE LE DISCORD</a>
                 </div>
             </div>
             <div class="row">
@@ -972,12 +1007,12 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-10 text-center">
-                    <p style="font-family: Lato-Italic; font-size: 12pt; color: white">WEBDEV BY <span style="font-family: 'Lato Black' ">CES'ESPORT</span></p>
+                    <p style="font-family: Lato-Italic; font-size: 12pt; color: white">WEBDEV BY <a class="lien-casse-couille" href="https://ces-esport.fr"><span>CES'ESPORT</span></a></p>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-10 text-center">
-                    <p style="font-family: Lato-Italic; font-size: 12pt; color: white">LOGO ET WEBDESIGN BY <span style="font-family: 'Lato Black' ">BACHELET JULIEN</span></p>
+                    <p style="font-family: Lato-Italic; font-size: 12pt; color: white">LOGO ET WEBDESIGN BY <a class="lien-casse-couille" href="https://twitter.com/Jvblt_"><span style="font-family: 'Lato Black' ">BACHELET JULIEN</span></a></p>
                 </div>
             </div>
             <div class="row mt-1 justify-content-center">
